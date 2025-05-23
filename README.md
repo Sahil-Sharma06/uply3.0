@@ -1,4 +1,4 @@
-# Uply – AI-Powered Career Co-Pilot for Tech Students 🚀
+# Uply – Career Co-Pilot for Technograds 🚀
 
 Uply is an all-in-one, AI-driven platform built to transform the placement preparation experience for tech students. Whether you're applying for internships, graduate roles, or off-campus opportunities, Uply equips you with every tool needed to prepare, apply, and succeed — all in one unified ecosystem.
 
@@ -83,13 +83,12 @@ Uply is purpose-built to address these gaps. It consolidates the complete prepar
 
 > This is an active WIP. Setup instructions and environment requirements will be added post-initial release.
 
----
 
 ## 🤝 Contributing
 
 We’re in early development. Contributions, suggestions, and feedback are welcome! Fork the repo, raise issues, or connect with us for collaboration.
 
----
+
 
 ## 📬 Contact
 
@@ -97,8 +96,19 @@ Built by [@maheep](https://github.com/maheep) and team.
 
 > Let’s make placement prep smarter, faster, and stress-free.
 
----
 
-## 📄 License
-
-MIT License – see [`MIT`](./LICENSE) for details.
+## ⚠️ **LICENSE WARNING – READ CAREFULLY**
+> All code, structure, and intellectual property within this repository are **owned exclusively by Maheep** and the **Uply project**.
+>
+> You are **NOT permitted** to:
+>
+> - ❌ Clone or fork this repository for any commercial or production use
+> - ❌ Modify, redistribute, or publish this code under any name or brand
+> - ❌ Incorporate any part of this code into other products or services
+> - ❌ Monetize, repackage, or white-label this project in any form
+>
+> Violations will result in DMCA takedowns, GitHub reports, and possible legal action under applicable intellectual property and copyright laws.
+>
+> To request a license for legitimate use, contact **Maheep** at: [maheep2403@gmail.com]
+>
+> Refer to the [LICENSE](./LICENSE) file for full legal terms.
