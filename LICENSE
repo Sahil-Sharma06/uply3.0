@@ -4,58 +4,44 @@ This source code is proprietary and confidential. It is made publicly available 
 
 By accessing, viewing, or referencing any part of this codebase, you agree to be bound by the terms and conditions outlined below:
 
----
-
-## 1. PERMITTED USAGE
+1. PERMITTED USAGE
 
 You are permitted to:
-- **Read and reference** the source code for personal, non-commercial, educational purposes only.
+- Read and reference the source code for personal, non-commercial, educational purposes only.
 - Share links to this repository in its unmodified, original form for informational purposes.
 
----
+2. PROHIBITED ACTIONS
 
-## 2. PROHIBITED ACTIONS
+You are explicitly prohibited from performing the following actions without prior written consent from the owner:
 
-You are **explicitly prohibited** from performing the following actions without prior written consent from the owner:
+- Cloning, downloading, or forking the repository for any purpose other than personal study or use.
+- Modifying, copying, or redistributing the code in any form.
+- Rebranding, white-labeling, or misrepresenting the code or any derivative work as your own.
+- Incorporating any part of this code into commercial products or services, whether directly or indirectly.
+- Selling, sublicensing, or monetizing the codebase, its structure, design, or functionality.
+- Hosting, deploying, or providing derivative services using any part of this code.
 
-- **Cloning, downloading, or forking** the repository for any purpose other than personal study or use.
-- **Modifying, copying, or redistributing** the code in any form.
-- **Rebranding, white-labeling, or misrepresenting** the code or any derivative work as your own.
-- **Incorporating any part of this code into commercial products or services**, whether directly or indirectly.
-- **Selling, sublicensing, or monetizing** the codebase, its structure, design, or functionality.
-- **Hosting, deploying, or providing derivative services** using any part of this code.
+3. INTELLECTUAL PROPERTY
 
----
+All intellectual property, trademarks, logos, names, and associated branding elements within this codebase remain the exclusive property of Maheep Tulsyan and/or the Uply project. No rights, titles, or interests are transferred to users by access or reference.
 
-## 3. INTELLECTUAL PROPERTY
+4. LIABILITY AND WARRANTY
 
-All intellectual property, trademarks, logos, names, and associated branding elements within this codebase remain the exclusive property of **Maheep Tulsyan** and/or the **Uply** project. No rights, titles, or interests are transferred to users by access or reference.
+This software is provided "as is", without warranty of any kind—express or implied. The author shall not be held liable for any damage, loss, or consequence resulting from the use, misuse, or inability to use this code.
 
----
-
-## 4. LIABILITY AND WARRANTY
-
-This software is provided **"as is"**, without warranty of any kind—express or implied. The author shall not be held liable for any damage, loss, or consequence resulting from the use, misuse, or inability to use this code.
-
----
-
-## 5. ENFORCEMENT
+5. ENFORCEMENT
 
 Violation of this license may result in:
-- **Immediate takedown notices (DMCA)**.
-- **Permanent bans from future usage** of associated codebases or platforms.
-- **Civil or criminal legal action** under applicable copyright and IP laws.
+- Immediate takedown notices (DMCA).
+- Permanent bans from future usage of associated codebases or platforms.
+- Civil or criminal legal action under applicable copyright and IP laws.
 
----
-
-## 6. REQUESTING PERMISSION
+6. REQUESTING PERMISSION
 
 If you wish to license this software for commercial use, integration, or distribution, please contact:
 
-**Maheep**  
-Email: maheep2403@gmail.com
-+91 9307775556
-
----
+Maheep  
+Email: maheep2403@gmail.com  
+Phone: +91 9307775556
 
 END OF LICENSE
