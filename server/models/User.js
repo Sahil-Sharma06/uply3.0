@@ -1,10 +1,10 @@
 import mongoose from mongoose;
 import {v4 as uuidv4} from 'uuid';
 const userSchema = new mongoose.Schema(
-     {
-      id: {
+  {
+    id: {
       type: String,
-      default: uuidv4, 
+      default: uuidv4,
       unique: true,
     },
     name: {
@@ -42,6 +42,16 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    // References
+    academics: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Academics' }],
+    awards: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Award' }],
+    certifications: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Certification' }],
+    extraCurriculars: [{ type: mongoose.Schema.Types.ObjectId, ref: 'ExtraCurricular' }],
+    projects: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Project' }],
+    publications: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Publication' }],
+    skills: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Skill' }],
+    socials: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Social' }],
+    workExperiences: [{ type: mongoose.Schema.Types.ObjectId, ref: 'WorkExperience' }],
   },
   {
     timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
