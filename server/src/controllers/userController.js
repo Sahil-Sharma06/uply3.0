@@ -1,5 +1,7 @@
 import User from "../models/User.js";
 import mongoose from "mongoose";
+import bcrypt from "bcryptjs";
+
 export const createUser = async (req,res) =>{
     try{
         const {name,dob,gender,college,address,email,password,phone,profilePictureUrl} = req.body;
@@ -108,6 +110,61 @@ export const deleteUser = async (req, res) => {
       .json({ message: "User deleted successfully", user: deletedUser });
   } catch (e) {
     console.error("Error deleting user:", e);
+    return res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
+export const updatePassword = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { currentPassword, newPassword } = req.body;
+
+    if (!currentPassword || !newPassword) {
+      return res.status(400).json({ message: "Both current and new password are required" });
+    }
+
+    const user = await User.findOne({ $or: [{ id }, { _id: id }] });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    const isMatch = await bcrypt.compare(currentPassword, user.password);
+    if (!isMatch) {
+      return res.status(400).json({ message: "Current password is incorrect" });
+    }
+
+    user.password = await bcrypt.hash(newPassword, 10);
+    await user.save();
+
+    return res.status(200).json({ message: "Password updated successfully" });
+  } catch (error) {
+    console.error("Error updating password:", error);
+    return res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
+export const updateProfilePicture = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { profilePictureUrl } = req.body;
+
+    if (!profilePictureUrl) {
+      return res.status(400).json({ message: "Profile picture URL is required" });
+    }
+
+    const updatedUser = await User.findOneAndUpdate(
+      { $or: [{ id }, { _id: id }] },
+      { $set: { profilePictureUrl } },
+      { new: true }
+    ).select("-password -refreshToken");
+
+    if (!updatedUser) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    return res.status(200).json({ message: "Profile picture updated successfully", user: updatedUser });
+  } catch (error) {
+    console.error("Error updating profile picture:", error);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
